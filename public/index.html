@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./tailwindcss.css">
 </head>
 
-<body class="container mx-auto text-center bg-violet-50 flex flex-col h-full gap-5">
-    <header class="bg-violet-900 text-violet-100 xl:rounded-b-2xl p-4 shadow-lg">
+<body class="container mx-auto text-center bg-violet-50 flex flex-col h-full">
+    <header class="bg-violet-900 text-violet-100 xl:rounded-b-2xl p-4 shadow-xl">
         <h1 class="text-3xl font-bold">Simulation de Remboursement</h1>
     </header>
     <main class="flex flex-col gap-5 grow">
         <!-- Inputs pour la simulation -->
-        <article>
+        <article class="mt-5">
             <section class="w-fit mx-auto">
                 <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 w-fit mx-auto">
                     <div class="sm:col-span-6">
@@ -108,7 +108,7 @@
             </section>
         </article>
     </main>
-    <footer class="p-1 bg-violet-900 text-violet-100 xl:rounded-t-2xl"><h6 class="font-bold italic">Version 0.0.1</h6></footer>
+    <footer class="p-1 bg-violet-900 text-violet-100 xl:rounded-t-2xl shadow-xl"><h6 class="font-bold italic">Version 1.0.0</h6></footer>
     <script>
         document.getElementById('simuler').addEventListener('click', function () {
             const emprunt = parseFloat(document.getElementById('emprunt').value);
